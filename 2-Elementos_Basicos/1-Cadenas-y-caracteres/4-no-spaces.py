@@ -1,4 +1,4 @@
-#! 2-my-split.py
+#! 4-no-scapes.py
 #
 # En códigos anteriores vimos que hay unas funciones que aplican sobre cadenas
 # que se escriben con la sintexis
@@ -10,7 +10,7 @@
 # las letras a mayúsculas, sacando privecho del Unicode
 #
 
-string = input("Dame una cadena:")
+string = input()
 
 # Delimitadores de palabras
 blank = ' '
@@ -43,7 +43,7 @@ my_string += s                         # El último ya no lo almacenamos. Entonc
 my_list.append(my_string)              # Almacenamos
 
 i = 0;                  # Imprimimos el resultado
-print(my_list)
+#print(my_list)
 while i < len(my_list):
     print(my_list[i] + ' ', end = '')
     i += 1

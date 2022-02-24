@@ -19,12 +19,9 @@ my_string = ""          # Creemos una cadena vacía que llenaremos poco a poco
 i = 0                   # i es el numero con el que iremos recorriendo los elementos de string
 while i < len(string):  # Mientas nuestro índice sea uno válido string
     num = ord(string[i])
-    if ord('a') <= num and num <= ord('z'):    # Si nuestro caracter está entre las minúsculas
+    if (ord('a') <= num and num <= ord('z')) or  (ord('à') <= num and num <= ord('ü')):    # Si nuestro caracter está entre las minúsculas
         num = num - (ord('a') - ord('A'))   # Desplazamos el número la misma distancia que hay entre las mayúsculas y las minúscula
-        my_string = my_string + chr(num)    # char() nos da el caracter en unicode correspondiente, y y lo concatenamos en my_string
-    elif ord('à') <= num and num <= ord('ü'):  # Por como está el ´unicode, me permite hacer este cambbio u extener el my_upper_py a estos caracteres
-        num = num - (ord('à') - ord('À'))
-        my_string = my_string + chr(num)
+        my_string = my_string + chr(num)    # char() nos da el caracter en unicode correspondiente, y y lo concatenamos en my_st
     else:
         my_string += string[i]
     i += 1              # Pasamos al siguiente caracter

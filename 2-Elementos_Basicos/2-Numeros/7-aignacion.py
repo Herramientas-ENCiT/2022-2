@@ -1,15 +1,13 @@
-
-
 n = input('Dame un número entero: ')
 n = int(n)
 bin_rev = ''
 bin = ''
-digit = None
+
 
 while n > 0:
     digit = n % 2
-    bin_rev += str( digit )
-    n //=  2
+    bin_rev += str( digit ) # x += 1  x = x + 1
+    n //=  2 #  n = n // 2
 
 i = len(bin_rev) - 1
 while i >= 0:

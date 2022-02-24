@@ -30,7 +30,7 @@ input('')
 a = 98
 b = 5
 c = 843
-print("\nHagamos\n a = ", a, "; b = ", a, "; c = ", c,";\n")
+print("\nHagamos\n a = ", a, "; b = ", b, "; c = ", c,";\n")
 ans = a + b
 print('a + b = ', ans, ' y es tipo ---> ', type(ans) )
 
@@ -51,7 +51,7 @@ input('')
 a = 27
 b = 3
 c = 4
-print("\nHagamos\n a = ", a, "; b = ", a, "; c = ", c,";\n")
+print("\nHagamos\n a = ", a, "; b = ", b, "; c = ", c,";\n")
 
 ans = a / b   # A pesar de que 27 / 3 = 9, que es un número entero, la división `/`arroja un resultado flotante (9.0). Como veremos más adeltante eso tiene consecuencias en el uso de memoria
 print('a / b = ', ans, ' y es tipo ---> ', type(ans) )

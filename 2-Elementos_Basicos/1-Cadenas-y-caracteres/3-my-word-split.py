@@ -34,7 +34,8 @@ while i < len(string)-1:
         my_string += s                              # Vamos llenandola
     else:     # Si son espacios en blanco
         status = outside_word                       # Estamos fuera de una palabra, entonces guardamos la palabra
-        my_list.append(my_string)                   # La almacenamos en una lista
+        if( my_string != ''):                       # Si no es una cadena vacía
+            my_list.append(my_string)                   # La almacenamos en una lista
         my_string  = ''                             # Reseteamos la cadena
     i += 1              # Pasamos al siguiente caracter
     s = string[i]       # Pasamos al siguiente caracter
@@ -44,6 +45,7 @@ my_list.append(my_string)              # Almacenamos
 
 i = 0;                  # Imprimimos el resultado
 print(my_list)
+
 while i < len(my_list):
     print(my_list[i])
     i += 1
