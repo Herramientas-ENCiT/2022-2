@@ -8,8 +8,8 @@
 # librerias ya desrrolladas.
 
 # Importemos la siguiente;
+from math import  *
 from cmath import *
-from math import *
 
 print('''
 from cmath import *

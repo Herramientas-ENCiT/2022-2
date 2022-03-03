@@ -2,13 +2,13 @@
 # Jonathan Urrutia
 # 2022-02-22
 
-# Librerias
+# Biblioteca
 # Ha operaciones matemáticas que no están definidas dentro de python, como las funciones
 # trigonométricos, la raíz cuadrara, u otras. Para esto es que podemos emplear las
-# librerias ya desrrolladas.
+# bliobetcas y a desrrolladas.
 
 # Importemos la siguiente;
-import math         # `wrappers` de para usar en python
+import math         # `wrappers` de C  de para usar en python
 import cmath        # Estas funciones nos ayudan a exetnder nuestros cálculos para valores complejos
 
 print("math.pi = ", math.pi ) # Todas las funciones o varibales del paquete van a ser llamadas con math.<elemento>.

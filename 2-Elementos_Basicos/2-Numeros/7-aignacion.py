@@ -1,7 +1,14 @@
 n = input('Dame un número entero: ')
-n = int(n)
-bin_rev = ''
-bin = ''
+n = int(n)  # vaor inicia
+bin_rev = ''  # cadena en sentido inverso de su representacion binaria
+bin = ''   # cadena eel orden correcto de ls represetnacion binaria
+digit = None # Digito actual a gardar en bin_rev de las rtŕesentaion biaria
+
+
+
+
+
+
 
 
 while n > 0:

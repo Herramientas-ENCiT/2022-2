@@ -14,7 +14,7 @@ print("cmath.pi = ", cmath.pi ) # Todas las funciones o varibales del paquete va
                               # Al prefijo se le conoce como el `método` ya que hace referencia a una biblioteca particular.
 
 # De esta forma, no sólo tenemos cálculo más rápidos que los usual, sino que en algunos casos con mayor presición
-print("cmath.exp( math.pi * 1j) = ", cmath.exp( math.pi * 1j)  )
+print("cmath.exp( math.pi * 1j) = ", cmath.exp( cmath.pi * 1j)  )
 
 input('')
 z = 1. + 0.5 * 1j
@@ -22,7 +22,7 @@ print("z = ", z)
 
 z_polar = cmath.polar(z)
 print("cmath.polar(z) = ", z_polar)
-print("cmath.rect(z_polar) = ", cmath.rect(z_polar))
+print("cmath.rect((z_polar[0],z_polar[1]) = ", cmath.rect(z_polar[0],z_polar[1]))
 
 print('¿Puedo calcular la idnetidad de Euler?')
 input('')
