@@ -5,12 +5,6 @@ bin = ''   # cadena eel orden correcto de ls represetnacion binaria
 digit = None # Digito actual a gardar en bin_rev de las rtŕesentaion biaria
 
 
-
-
-
-
-
-
 while n > 0:
     digit = n % 2
     bin_rev += str( digit ) # x += 1  x = x + 1
