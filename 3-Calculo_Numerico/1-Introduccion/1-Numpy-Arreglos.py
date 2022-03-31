@@ -36,7 +36,7 @@ array_2 = np.array(list_2)
 print("array_1 = np.array(list_1)  -->  ", array_1)
 print("array_2 = np.array(list_2)  -->  ", array_2)
 
-print("\narray_1+ array_2 = ", array_1 + array_2)
+print("\narray_1 + array_2 = ", array_1 + array_2)
 print("array_1 * 5 =  ", array_1 *5)
 
 # Veamos cómo podemos hacer más general a los arreglos, anidando listas
@@ -45,7 +45,7 @@ input('')
 
 data = [list_1, list_2, list_1, list_2]
 data = np.array(data)
-print("data = np.array( [list_1, list_2, list_1] ) , ", type(data))
+print("data = np.array( [list_1, list_2, list_1, list_2] ) , ", type(data))
 
 print(data,"\nDonde además, podemos obtener los siguiente atributos\n")
 print("data.shape -> ", data.shape)  # tamaño de la matriz
@@ -84,7 +84,7 @@ input('')
 # Aqui vemos cómo enermos que cambiar el tipo del elemento
 print("Notemos que sólo se puede emplear dtype cuando se crea el arreglo, no después. Pero esto se puede solucionar creando una copia del arreglo:")
 array_3 = np.array(array_3, dtype = np.int)
-print("""array_3 = np.array(array_3, dtype = np.int
+print("""array_3 = np.array(array_3, dtype = np.int)
 array_3.dtype --> """,array_3.dtype  )
 
 input('')

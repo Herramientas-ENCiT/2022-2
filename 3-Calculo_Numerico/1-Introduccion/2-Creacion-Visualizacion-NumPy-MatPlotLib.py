@@ -1,10 +1,10 @@
 
 import matplotlib.pyplot as plt # Un paquete de graficos
-import numpy as np              # Computó Numérico.
+import numpy as np              # Computo Numérico.
 
 print('''
 import matplotlib.pyplot as plt # Un paquete de graficos
-import numpy as np              # Computó Numérico.
+import numpy as np              # Computo numérico.
 ''')
 
 # Creacion de arreglos
@@ -27,7 +27,7 @@ print("""
 """)
 
 input('')
-print('Vamos a crear una list `x`, y una lista `y` con los comandos siguientes:')
+print('Vamos a crear una list `x`, y una lista `y_i` con los comandos siguientes:')
 x = np.linspace(0, 2*np.pi, 100) # Creamos un arreglo con número de 0 a 2 Pi con 100 valores
 y_1 = np.zeros( len(x))  # Creamos un arreglo con puros ceros, con el mismo núero de elemtnos que # XXX:
 y_2 = np.zeros(len(x))
@@ -39,10 +39,12 @@ y_2 = np.zeros(len(x))
 y_3 = np.zeros(len(x))
 plt.plot(x, y,marker =  ',', color = "m")
 """)
-input('')
 plt.plot(x, y_1,marker =  ',', color = "m")
-print('plt.show()')
+
+input('')
 plt.show()
+print('plt.show()')
+
 
 input('')
 print('Para modificar los valores del arreglo podemos cambiar los elementos, uno por uno con un loop:')
