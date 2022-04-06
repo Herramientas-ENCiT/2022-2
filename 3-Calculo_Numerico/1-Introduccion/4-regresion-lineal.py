@@ -9,7 +9,6 @@ y_exp = 3 * x + 2 + error
 
 
 [m, b] = mc.minimos_cuadrados(x,y_exp)
-
 y_teo = m * x + b
 
 print(m, b)

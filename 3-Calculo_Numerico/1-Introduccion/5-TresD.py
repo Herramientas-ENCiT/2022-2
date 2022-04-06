@@ -6,8 +6,11 @@ from mpl_toolkits.mplot3d import Axes3D
 # Vamos a crear algunos datos para graficas en 3D
 
 x = np.linspace(-np.pi, np.pi, 50)
-X, Y = np.meshgrid(x,x)
+X, Y = np.meshgrid(x,  x)  # Mesh grid nos crea una lista en NxN, donde N es la longitud de un arreglo
+print("X = np.meshgrid(3 * np.linspace(-np.pi, np.pi, 50) )\n", Y)
+print("Y = np.meshgrid(np.linspace(-np.pi, np.pi, 50) )\n", Y)
 Z = np.cos(X*Y)
+
 
 # Grafica de densidad
 
@@ -16,9 +19,10 @@ fig1, ax1 = plt.subplots()   # Creamos una figura y el eje coordenado ax1
 fig2, ax2 = plt.subplots()   # Creamos una figura y el eje coordenado ax2
 
 
-ax1.imshow(Z,                                  # La matrix que estamos graficando
+im = ax1.imshow(Z,                                  # La matrix que estamos graficando
         extent=(-np.pi, np.pi, -np.pi, np.pi)) # (-x, x, -y, y)  limits
 ax1.set_title('Density Plot')
+fig1.colorbar(im)
 
 im = ax_all.imshow(Z, extent=(-np.pi, np.pi, -np.pi, np.pi))  # Nombramos esta vriable porque vamos a usar sus datos para la barra de colores
 fig_all.colorbar(im, orientation='vertical', shrink=0.8)
