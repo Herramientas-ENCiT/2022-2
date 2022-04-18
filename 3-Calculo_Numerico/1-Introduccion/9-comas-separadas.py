@@ -32,6 +32,7 @@ with open('sample.csv', newline='') as csvfile:
 
 input('')
 
+
 print('Podemos scar provecho de los diccionarios para trabajar con los CSV:')
 print('''with open('names.csv', 'w', newline='') as csvfile:
     fieldnames = ['first_name', 'last_name', 'result']
@@ -44,7 +45,7 @@ with open('names.csv', 'w', newline='') as csvfile:
     writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
     writer.writeheader()
     writer.writerow({'first_name': 'John','last_name': 'Smith','result' : 54})
-    writer.writerow({'first_name': 'Jane', 'last_name': 'Lewis','result': 63})
+    writer.writerow({'first_name': 'Jane', 'result': 63, 'last_name': 'Lewis'})
     writer.writerow({'first_name': 'Chris', 'last_name': 'Davies','result' : 72})
 
 input('')

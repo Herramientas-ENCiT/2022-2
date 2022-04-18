@@ -5,6 +5,7 @@ import csv
 
 
 def pulse(x, position, height, width):
+    # x es un np.array
     return height * (x > (position - width/2)) * (x <= (position + width/2))
 
 a = np.array([1, 2, 3, 4])
@@ -25,7 +26,7 @@ print('''def pulse(x, position, height, width):
 ''')
 
 x = np.linspace(-11,10,100)
-x0 = 0
+x0 = -2
 h = 5
 p = pulse(x, x0, h, 1/h )
 
@@ -48,17 +49,17 @@ ax.set_ylabel('Pulso')
 plt.legend()
 plt.show()
 
-fig, ax = plt.subplots()
 
-h_list = np.array(range(1,20,2))
+fig, ax = plt.subplots()
+h_list = np.array(range(1,21,2))
 lista = np.zeros((len(h_list), len(x)+1))
 for i in range(0,len(h_list)-1):
     h = h_list[i]
     p = pulse(x, x0, h, 1/h )
     ax.plot(x,p , label = r'$h = '+str(h)+'$')
 
-    lista[i,0] = h
-    lista[i,0:] = p
+#    lista[i,0] = h
+#    lista[i,0:] = p
 #writer.writerow([h].append(p)
 
 #with open('pulsos.csv', 'w', newline='') as csvfile:  # La w significa de write
