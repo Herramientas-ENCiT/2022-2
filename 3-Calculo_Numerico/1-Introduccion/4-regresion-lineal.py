@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt # Un paquete de graficos
 import paq.mincuad as mc   # Importar desde un subdirectorio
 
 x = np.linspace(0, 10, 30)
-error = np.random.rand(len(x)) * 1
+error = np.random.rand(len(x)) * 10
 y_exp = 3 * x + 2 + error
 
 
