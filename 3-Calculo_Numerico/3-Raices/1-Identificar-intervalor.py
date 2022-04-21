@@ -3,13 +3,11 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 
-
 x = np.linspace(0,2*np.pi, 50)
 y = np.sin(2*x)-np.cos(x)
 
 plt.plot(x,y, marker = '*', label = r'$f(x)$')
 plt.plot(x,np.zeros(len(x)), label = 'Eje x')
-
 
 #sign = np.zeros(len(y)-1)
 #for i in range(0, len(sign)):
@@ -24,7 +22,6 @@ for i in range(0, len(sign)):
 print(intervalos)
 
 plt.plot(x[1:],sign, label = 'signo', marker = '.')
-
 
 plt.legend()
 plt.show()
