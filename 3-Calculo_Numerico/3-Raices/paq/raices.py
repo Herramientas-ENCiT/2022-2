@@ -18,7 +18,7 @@ def root_int(f, x_list):
 
     return np.array(intervalos)
 
-def bisection(f, int, tol = .001, n_max = 100):
+def bisection(f, int, tol = .00001, n_max = 1000):
     '''
     Metodo de biseccion para calcilar raices en un intervalo donde se
     garantice que hay una.
@@ -28,8 +28,8 @@ def bisection(f, int, tol = .001, n_max = 100):
     count = 0
     x_left = int[0]
     x_right = int[1]
-    mid_point = 0.5 * (x_left + x_right)
     delta_x = x_right - x_left
+    mid_point = x_left + 0.5 * delta_x
 
     while (delta_x/2 > tol and count < n_max):
         if f(x_left) * f(mid_point) > 0:
@@ -39,6 +39,7 @@ def bisection(f, int, tol = .001, n_max = 100):
         else:
             break
         count += 1
-        mid_point = 0.5 * (x_left + x_right)
+        delta_x = x_right - x_left
+        mid_point = x_left + 0.5 * delta_x
 
     return mid_point

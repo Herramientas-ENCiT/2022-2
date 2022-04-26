@@ -16,7 +16,7 @@ raices = np.zeros(len(intervalos))
 print(intervalos)
 
 for i in range(0,len(intervalos)):
-    raices[i] = rt.bisection(func, intervalos[i])
+    raices[i] = rt.bisection(func, intervalos[i], tol = 1e-8)
 
 plt.plot(raices,np.zeros(len(raices)), marker = '*',label = 'raices')
 print(raices)
